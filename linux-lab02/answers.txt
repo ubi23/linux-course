@@ -1,0 +1,122 @@
+--------------------------------------------------------------------------------
+    LAB 02                                       Advanced Command Line Usage    
+--------------------------------------------------------------------------------
+
+    Answer all questions for Lab02 in this file.
+
+
+--------------------------------------------------------------------------------
+    QUESTIONS - Managing Processes
+--------------------------------------------------------------------------------
+
+------------------
+    QUESTION 1
+------------------
+
+A) the load average in the last 1 minute was 2.93 ,
+   the load average in the last 5 minutes was 1.95 ,
+   the load average in the last 15 minutes was 1.57. 
+
+B) there are 1765 tasks in total, 2 are running , 1750 are sleeping, 13 are stopped
+
+
+C) jobs
+------------------
+    QUESTION 2 
+------------------
+
+it makes the command a process running in the backgroung
+
+------------------
+    QUESTION 3 
+------------------
+
+ps r|wc
+
+
+--------------------------------------------------------------------------------
+    QUESTIONS - Variables and the Path Variable
+--------------------------------------------------------------------------------
+
+------------------
+    QUESTION 4 
+------------------
+
+issues that can arise are that the system default environment setting can be changed and malicious
+script can be run. e.g. if we create a new ls file in which a malicious script is written, then when running ls in the terminal can have bad behaviours.
+    
+------------------
+    QUESTION 5 
+------------------
+
+A=Apple
+B=Ball
+C=Cat
+
+A)Apple  
+
+B)AppleBall  
+
+C)  
+
+D)  
+
+E)bash: C: command not found
+at
+  
+
+F)Apple Ball Cat 
+
+G)AppleBallCat  
+
+H)$A  
+
+
+--------------------------------------------------------------------------------
+    QUESTIONS - Pipes and Redirection 
+--------------------------------------------------------------------------------
+    
+------------------
+    QUESTION 6 
+------------------
+
+since 'uniq' does not detect repeated lines unless they are adjacent, we need to first sort
+so all repeated lines are adjacent and therefore get a unique lines.
+    
+------------------
+    QUESTION 7 
+------------------
+
+A)prints lines matching a certain pattern  
+
+B)in ~/linux-lab02/extras execute the following command
+grep "Chapter" Bash-Beginners-Guide.txt	
+ 
+
+    
+------------------
+    QUESTION 8 
+------------------
+
+it sorts the lines of the file .bash_history, then
+through the pipe, it processes the file and outputs no repeated lines with at the beginning of
+each line the number of occurancies of that line before it was processed.
+Then, again through the pipe, it sorts these new lines but this time with the numeric value
+of the string. Then through the pipe, we redirect the last 10 lines into commands.txt.
+
+   
+    
+-------------------
+    QUESTION 9 
+-------------------
+
+'>' redirects the output to a file by creating it if it doesn't already exist and overwriting everithing.
+
+
+'>>' redirects the output to a file by creating it if it doesn't already exist and appending the outpu.
+
+   
+
+--------------------------------------------------------------------------------
+    FINISHED LAB 02                                             MARKS: XX/XX    
+--------------------------------------------------------------------------------
