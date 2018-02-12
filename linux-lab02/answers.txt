@@ -20,7 +20,7 @@ A) the load average in the last 1 minute was 2.93 ,
 B) there are 1765 tasks in total, 2 are running , 1750 are sleeping, 13 are stopped
 
 
-C) jobs
+C) top -U [USERNAME]
 ------------------
     QUESTION 2 
 ------------------
