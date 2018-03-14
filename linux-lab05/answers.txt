@@ -1,0 +1,126 @@
+--------------------------------------------------------------------------------
+    LAB 05                                  GNU Make and Regular Expressions
+--------------------------------------------------------------------------------
+
+    Answer all questions for Lab05 in this file. Questions or tasks which 
+    require you to edit another file have the name of the file already 
+    entered for you.
+
+--------------------------------------------------------------------------------
+    QUESTIONS
+--------------------------------------------------------------------------------
+
+------------------
+    QUESTION 1 
+------------------
+
+A)git clone https://bitbucket.org/glaphysp2t/lab5-example
+
+to create a new git repository in the given directory we use
+
+git init
+
+B)git log --oneline
+
+the message is:
+A simple program that prints out an ASCII histogram based on a test set of integer data
+
+
+C)It draws "#" in a kind of histogram.
+
+D)
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   README.md
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	draw.o
+#	histogram
+#	histogram.o
+#	util.o
+no changes added to commit (use "git add" and/or "git commit -a")
+    
+E)git add README.md
+  git commit -m "edited README"
+  
+commit 28eee90ec155e7eeb2a3feeb5a6e7631b7403c8d
+Author: Ubaidullah Khan <2271135k@student.gla.ac.uk>
+Date:   Fri Mar 9 19:54:02 2018 +0000
+
+    edited README
+
+
+
+F)git branch myfeature
+
+
+G)git checkout myfeature
+
+the result of git branch --list is:
+  master
+* myfeature
+
+
+H) the output is:
+commit 868a866d8325cba743c8395240286f7624527525
+Author: Ubaidullah Khan <2271135k@student.gla.ac.uk>
+Date:   Fri Mar 9 20:04:02 2018 +0000
+
+    changed few files
+
+commit 28eee90ec155e7eeb2a3feeb5a6e7631b7403c8d
+Author: Ubaidullah Khan <2271135k@student.gla.ac.uk>
+Date:   Fri Mar 9 19:54:02 2018 +0000
+
+    edited README
+
+commit 8fbd35f49df21f5b607e6f8a309cb15dd4973c2e
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 13:51:56 2015 +0000
+
+    Refactored to move utility code out of the main file
+
+commit e532f4f3fa59f94af33023fae79d96473401b4e7
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 13:47:05 2015 +0000
+
+    Added randomly generated data
+
+
+------------------
+    QUESTION 2
+------------------
+
+A)"$@" means ‘the target of the current rule’.
+
+When Make is run it will replace this variable with the target name.
+
+B)"$^" refers to ‘all the dependencies of the current rule’. When Make is run it will replace this variable with the dependencies.
+
+C)"$<" means the name of the first prerequisite. If the target got its recipe from an implicit rule, this will be the first prerequisite added by the implicit rule.
+
+D)"$?" is used to represent all of the dependencies that are newer than the target.
+
+------------------
+    QUESTION 3
+------------------
+
+A) Submit modified Makefile
+
+B) Submit modified Makefile
+
+C) Submit modified C & H files
+
+D) Submit sim.data
+
+E) Submit graph image
+    
+F) The library needed in the simulation makefile was the math library since we needed mathematic functions. 
+    
+G) Debugging symbols can be enabled with "-g" and compiler optimizations with "-O" which can be combined as "-Og".
+    
