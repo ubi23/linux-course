@@ -1,0 +1,144 @@
+--------------------------------------------------------------------------------
+    LAB 01                               An introduction to the command line    
+--------------------------------------------------------------------------------
+
+    Answer all questions for Lab01 in this file.
+
+--------------------------------------------------------------------------------
+    QUESTIONS - Files and Directories
+--------------------------------------------------------------------------------
+
+------------------
+    QUESTION 1
+------------------
+
+experiments:
+exp1
+
+experiments/exp1:
+data  docs  results
+
+experiments/exp1/data:
+10.data  16.data  21.data  27.data  32.data  38.data  43.data  49.data  7.data
+11.data  17.data  22.data  28.data  33.data  39.data  44.data  4.data   8.data
+12.data  18.data  23.data  29.data  34.data  3.data   45.data  50.data  9.data
+13.data  19.data  24.data  2.data   35.data  40.data  46.data  5.data
+14.data  1.data   25.data  30.data  36.data  41.data  47.data  5s
+15.data  20.data  26.data  31.data  37.data  42.data  48.data  6.data
+
+experiments/exp1/data/5s:
+15.data  25.data  35.data  45.data  50.data  5.data
+
+experiments/exp1/docs:
+
+experiments/exp1/results:
+
+
+------------------
+    QUESTION 2 
+------------------
+
+cp -r experiment experiments/exp1  
+  
+------------------
+    QUESTION 3
+------------------
+
+because the directory was not empty and we didn't specify to remove anyway although it had content in it 
+    
+------------------
+    QUESTION 4
+------------------
+
+rm -r experiment
+    
+------------------
+    QUESTION 5
+------------------
+
+A) ls -r reverse the order while it is sorting, so we see from z to a. ls -R instead displays all the subdirectories recursively.
+
+B)it shows all the files and directories, also the ones hidden
+
+C)they starts with a dot
+
+D).PhysicsIsFun
+    
+------------------
+    QUESTION 6
+------------------
+
+A) . refers to the current directory and .. refers to the one above
+
+B)  ls -A
+   
+------------------
+    QUESTION 7 
+------------------
+
+A)ls -S
+    
+B)ls -c -lt or ls -t
+  
+-------------------
+    QUESTION 8 
+-------------------
+
+A) cd ../..
+
+B) cd ~/experiments/ 
+    
+-------------------
+    QUESTION 9 
+-------------------
+    
+A) less -N generate.sh
+    
+B) exit 1
+    
+-------------------
+    QUESTION 10
+-------------------
+
+A) head prints the first 10 lines, tail prints the last 10 lines of each file to standard output
+
+B) head -n 5 filename
+
+C) -l or --line
+ 
+
+--------------------------------------------------------------------------------
+    QUESTIONS - File Permissions
+--------------------------------------------------------------------------------
+
+-------------------
+    QUESTION 11
+-------------------
+
+A) the user can read and write, the group can read and write and other can just execute
+  
+B) chmod 300
+    
+-------------------
+    QUESTION 12
+-------------------
+
+if it starts with a d instead of - 
+   
+-------------------
+    QUESTION 13
+-------------------
+
+A) using rm -i 
+
+B) using rm -f
+      
+-------------------
+    QUESTION 14
+-------------------
+
+Sssshhh, it's a secret :)
+
+--------------------------------------------------------------------------------
+    FINISHED LAB 01                                             MARKS: XX/XX    
+--------------------------------------------------------------------------------
