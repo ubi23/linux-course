@@ -1,0 +1,68 @@
+--------------------------------------------------------------------------------
+    LAB 06                                                      GDB & DEBUGGING
+--------------------------------------------------------------------------------
+
+    Answer all questions for Lab06 in this file. Questions or tasks which 
+    require you to edit another file have the name of the file already 
+    entered for you.
+
+--------------------------------------------------------------------------------
+    QUESTIONS
+--------------------------------------------------------------------------------
+
+------------------
+    QUESTION 1 
+------------------
+
+A)the -g flag is missing  
+
+B)the program says:
+Segmentation fault (core dumped)
+
+To run the debugger we can use gdb <executable> or gdb --tui <executable>
+for a terminal with UI
+
+C)to set a breakpoint at the beginning of the code we could either use the number of the line or use the function name like 
+
+break main or break 6
+
+D)line 9 function generateRandomData(data, SIZE_OF_DATA);
+
+E)we can use either continue or c 
+    
+F)the error is 
+Program	received signal	SIGSEGV, Segmentation fault.
+0x00000000004006a5 in generateRandomData (data=0x7fffffffe580, len=10)
+    at util.c:10
+
+
+G) to print the content of dataptr variable we type:
+
+print dataptr
+
+and its content is $1 = (int *) 0x0 
+    
+H)To print out the contents of the memory location dataptr points to, we can use
+
+"print *dataptr". The following error message appears:
+
+Cannot access memory at address 0x0
+
+Since the memory address we are actually pointing to is set to NULL, which is not accessible  
+
+I)The error obtained is the same as the one when using NULL instead of data
+
+(segmentation fault core dumbed), however the difference is that data tries to display i decreasingly starting from 0, trying to access elements of the array but the negative positions do not exist, resulting in an infinite loop and therefore a segmentation fault.  
+
+J) I would set the breakpoint at line 12, before starting the loop
+
+K) $1 = {0, 43, 29, 30, 84, 12, 13, 73, 8, 62}
+
+L) watch i
+
+M) i is decreasing and it gets minus values
+
+N) i is starting from zero and it is decreasing each time and the condition
+to exit from the loop can never ve reached.
+
+O) for (i == 0; i < SIZE_OF_DATA; i++)
